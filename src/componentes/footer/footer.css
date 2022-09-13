@@ -1,0 +1,47 @@
+footer{
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    background-color: #181818;
+    padding: 10px;
+}
+.div-links {
+    display: flex;
+    flex-direction: row;
+    grid-area: 1 / 2 / NaN / NaN;
+    justify-content: space-around;
+}
+
+.footer-contact{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.git:hover{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+.mail:hover{
+    -webkit-filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+}
+.linkedin:hover{
+    filter: invert(41%) sepia(9%) saturate(7500%) hue-rotate(178deg) brightness(94%) contrast(80%);
+}
+
+.footer-icon{
+    width: 3em;
+    filter: brightness(0) invert(1);
+    margin-bottom: 8px;
+}
