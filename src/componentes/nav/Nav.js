@@ -1,6 +1,11 @@
+import './nav.css';
+
 function Nav() {
     return (
-        <nav>
+        <nav id='nav'>
+            <a href='#nav'>
+                <img className='home-icon' src='/img/icons8-home.svg' alt='ïcono de Home'></img>
+            </a>
             <ul>
                 <li><a href="#about">Acerca</a></li>
                 <li><a href="#backend">Backend</a></li>
