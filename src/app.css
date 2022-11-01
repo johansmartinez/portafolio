@@ -2,5 +2,14 @@
     min-width: 100%;
     max-width: 100vh;
     min-height: 90vh;
+    max-height: fit-content;
     background-color: #F7F5F2;
+    margin: 0;
+}
+
+.principal-container{
+    max-width: 80vw;
+    min-width: 80vw;
+    min-height: fit-content;
+    margin: 15px auto;
 }

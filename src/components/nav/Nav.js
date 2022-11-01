@@ -53,8 +53,8 @@ function Nav() {
                     resolution==='DESKTOP'&&
                     <ul>
                         {
-                            links.map(e=>(
-                                <li ><a className={`nav-link`} href={e.url}> {e.name} </a></li>
+                            links.map((e,i)=>(
+                                <li key={`dl-${i}`}><a className={`nav-link`} href={e.url}> {e.name} </a></li>
                             ))
                         }
                         
@@ -71,8 +71,8 @@ function Nav() {
                         <div className={menu_class}>
                             <ul>
                                 {
-                                    links.map(e=>(
-                                        <li className='toggle-menu-li' ><a className={`toggle-menu-link`} href={e.url}> {e.name} </a></li>
+                                    links.map((e,i)=>(
+                                        <li className='toggle-menu-li' key={`ml-${i}`}><a className={`toggle-menu-link`} href={e.url}> {e.name} </a></li>
                                     ))
                                 }
                                 
