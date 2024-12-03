@@ -46,6 +46,7 @@ footer{
 
 .footer-icon{
     width: 4vw;
+    height: 4vw;
     filter: brightness(0) invert(1);
     margin-bottom: 8px;
 }
@@ -89,5 +90,6 @@ footer{
     }
     .footer-icon{
         width: 10vw;
+        height: 10vw;
     }
 }

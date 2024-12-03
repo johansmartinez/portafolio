@@ -1,5 +1,27 @@
 ---
-import './footer.css'
+import './footer.css';
+import Socialmedia from './socialmedia.astro';
+
+const socialMedia=[
+    {
+        name:"git",
+        url: "https://github.com/johansmartinez",
+        image:"/img/github.svg",
+        label:"@johansmartinez",
+    },
+    {
+        name:"mail",
+        url: "mailto:johan.martinez.dev@gmail.com",
+        image:"/img/mail.svg",
+        label:"johan.martinez.dev@gmail.com",
+    },
+    {
+        name:"linkedin",
+        url: "https://www.linkedin.com/in/johan-sebastian-martinez-junco-dev/",
+        image:"/img/linkedin.svg",
+        label:"Johan Martinez",
+    },
+];
 ---
 
 <footer id='contact'>
@@ -7,17 +29,10 @@ import './footer.css'
         <p class='big-p'>Johan Martínez</p>
     </div>
     <div class='div-links'>
-        <a target="_blank" rel='noreferrer' class='footer-contact git' href="https://github.com/johansmartinez">
-            <img class="footer-icon" src="./img/iconmonstr-github-1.svg" alt="Logo github"/>
-            <span class='span-contact'>@johansmartinez</span>
-        </a>
-        <a target="_blank" rel='noreferrer' class='footer-contact mail' href="mailto:johan.martinez.dev@gmail.com">
-            <img class="footer-icon" src="./img/iconmonstr-mail-thin.svg" alt="icono correo electrónico"/>
-            <span class='span-contact'>johan.martinez.dev@gmail.com</span> 
-        </a>
-        <a target="_blank" rel='noreferrer' class='footer-contact linkedin' href="https://www.linkedin.com/in/johan-martinez-b37a8a22a/">
-            <img class="footer-icon" src="./img/iconmonstr-linkedin-3.svg" alt="logo linkedin"/>
-            <span class='span-contact'>/johan-martinez-b37a8a22a</span>
-        </a>
+        {
+            socialMedia.map(s=> 
+            <Socialmedia name={s.name} image={s.image} label={s.label} url={s.url}/>
+            )
+        }
     </div>
 </footer>
